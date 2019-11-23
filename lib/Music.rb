@@ -9,10 +9,6 @@ class Music
     self.all << self 
   end
   
-  def self.all 
-    @@all 
-  end
-  
   def self.create(name)
     new = self.new(name) 
     new.save 
