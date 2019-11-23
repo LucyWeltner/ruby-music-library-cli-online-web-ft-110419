@@ -53,7 +53,6 @@ class MusicLibraryController
   
   def list_artists
     names = Artist.all.map{|artist| artist.name}
-    p Artist.all 
     names = names.sort
     names.each_with_index do |artist, index|
       puts "#{index+1}. #{artist}"
